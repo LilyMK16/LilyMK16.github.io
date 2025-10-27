@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+
+<head>
+	 <meta 
+
+	 http-equiv='refresh' content='3; URL=Index.html'>
+
+<style>
+
+	body {
+			background-color: #daedfe;
+		}
+		
+
+#marker{
+	width: 500px;
+	Height: 500px;
+	background-size: cover;
+	rotate: 180deg;
+	position: relative;
+	left: -150px;
+	background-image: url(marker.png);
+	animation-name: markermove;	
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+#line {
+	width: 40px;
+	Height: 20px;
+	position: relative;
+	top:-27px;
+	background-color: #ffa2cd;
+	animation-name: longer;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+
+}
+
+@keyframes markermove
+		{
+			
+			from {left: 1250px ;}
+			to {left: -150px ;}
+		}
+
+@keyframes longer
+		{ 
+			
+			from {width: 1400px;}
+			to {width: 40px;}
+		 }
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id=marker> </div>
+<div id=line> </div>
+
+</body>
