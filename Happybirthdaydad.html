@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Special+Elite&display=swap" rel="stylesheet">
+
+<style type="text/css"> 
+
+	.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+	#hbd{
+		font-family:"Momo Signature", cursive;
+		font-size: 100px;
+		color: goldenrod;
+	}
+
+	body{
+		background-color: #080838;
+	}
+
+	#dad{
+		background-image: url('Dad.JPG');
+		width: 300px;
+		height: 300px;
+		background-position:center;
+		background-size: cover;
+		animation-name: spin;
+		animation-duration: 3s;
+		animation-iteration-count:1;
+
+	}
+	@keyframes spin
+	{ 
+		from {rotate:0deg;}
+		to {rotate:1800deg}
+	 }
+
+
+
+</style>
+
+<body>
+
+	<center>
+	<div id="hbd"> Happy Birthday Dad!!! </div>
+	<div id="dad"> </div>
+	</center>
+
+	<audio src="HBD.m4a" id="audio"></audio>
+
+	<script type="text/javascript">
+		dad.addEventListener ("click", function(){audio.play()})
+	</script>
+</body>
