@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type ="text/css">
+		#hazel {
+			width:50px;
+			height:50px;
+			background-image: url(Hazel2.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			position: absolute;
+
+
+		}
+
+		.color {
+			height: 20px;
+			width: 20px;
+		}
+
+		#red {
+			background-color: darkred;
+		}
+
+		#orange {
+			background-color: orangered;
+		}
+
+		#yellow {
+			background-color: #fEb12b;
+		}
+		#green {
+			background-color: greenyellow;
+		}
+
+		#blue {
+			background-color: skyblue;
+		}
+		#purple {
+			background-color:rebeccapurple;
+		}
+		#burly {
+			background-color:burlywood;
+		}
+
+		#circle {
+			background-color:dimgrey;
+			border-radius: 50%;
+			height: 100px;
+			Width: 100px;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+	
+	<script type="text/javascript">
+		document.addEventListener ("mousemove", function(event){console.log(event)
+		hazel.style.left=event.clientX + "px"
+		hazel.style.top=event.clientY + "px"
+		})
+
+		red.addEventListener ("click", function(){circle.style.backgroundColor="darkred"
+		})
+
+	</script>
+
+	<div id=hazel> </div>
+	<div class=color id=red> </div>
+	<div class=color id=orange> </div>
+	<div class=color id=yellow> </div>
+	<div class=color id=green> </div>
+	<div class=color id=blue> </div>
+	<div class=color id=purple> </div>
+	<div class=color id=burly> </div>
+	<div id=circle> </div>
+
+
+
+</body>
+</html>

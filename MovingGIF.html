@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+
+		#dog {
+			background-image: url(standingdog.png);
+			width:300px;
+			height: 300px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+		#credit {
+			font-size: 7px;
+		}
+
+
+
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id=dog> </div>
+	<div id=credit> gif from pinterest </div>
+
+	<script type="text/javascript">
+
+dog.style.left="0px"
+dog.style.backgroundImage="url(standingdog.png)"
+document.addEventListener("keydown", function(){
+	console.log("running")
+	dog.style.left = parseInt(dog.style.left) +5 +"px"
+		dog.style.backgroundImage="url(dog.gif)"
+
+})
+
+document.addEventListener("keyup", function(){
+		dog.style.backgroundImage="url(standingdog.png)"
+
+
+
+})
+
+	</script>
+
+
+</body>
+
+</html>
+

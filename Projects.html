@@ -29,24 +29,110 @@
 
 			}
 
-			a{
-				  font-weight: 400;
+			a {
 				  font-style: normal;
 				  text-decoration: none;
-				color: #ec7699;
+				  font-color: normal; 
+
 				
 				
 			}
 
-			a:hover{
+			#home{
+				color: #ec7699;
+
+
+			}
+
+			#home:hover{
 				background-color: #ffef86;
 				transition: 2s;
 			}
 
-	
-	
+	#projectspalette {
+		background-image: url(projectspalette.png);
+		height: 100vh;
+		width: 50vw;
+		background-size: contain;
+		background-repeat:no-repeat;
+		/*background-color: blueviolet;*/
+		position: fixed;
+		top: 0vh;
+		left:25vw;
+
+	}
+
+	.project {
+		font-size: 5vh;
+		font-family:"courier";
+		z-index:1;
+		/*width:50px;
+		height:50px;*/
+		text-align:center;
+		vertical-align:middle;
+		line-height:1vh;
+	}
+	#one {
+		position:fixed;
+		top:31vh;
+		left:28.6vw;
+		color:saddlebrown;
+		transition: background-color .75s ease;
+	}
+	#one:hover{
+		background-color:#573e2e;
+		transition:2s;
+		}
 
 
+	#two {
+		position:fixed;
+		top:31vh;
+		left:33.2vw;
+		color:darkslategrey;
+	}
+
+	#two:hover {
+		background-color:#afaba5;
+		transition:2s;
+	}
+
+	#three {
+		position:fixed;
+		top:31vh;
+		left:38vw;
+		color:#b05500;
+		transition: background-color .75s ease;
+	}
+	
+	
+	#three:hover {
+		background-color:#e3a730;
+		transition:2s;
+	}
+	#four {
+		position:fixed;
+		top:31vh;
+		left:42.5vw;
+		color:#824700;
+		transition: background-color .75s ease;
+	}
+	#four:hover {
+		background-color:#d87900;
+		transition:2s;
+	}
+#five {
+		position:fixed;
+		top:32%;
+		left:48.5%;
+		color:#5e6200;
+		transition: background-color .75s ease;
+	}
+
+#five:hover {
+	background-color:#9e9d2c;
+	transition:2s;
+}
 	</style>
 
 	
@@ -58,9 +144,25 @@
 
 <br><br>
 
-Go back <a href="LAIndex.html"> Home  🏡🪴?
+<div> Go back <a id=home href="LAIndex.html"> Home  🏡🪴? </a> </div>
 
+<div> 
 <div id="image"> </div>
+	<div class=project id=one> <a id=one href="MovingGIF.html"> 1 </a> </div>
+	<div class=project id=two> <a id=two href="functions.html"> 2 </a> </div>
+
+
+	<div class=project id=three> <a id=three href="clicker.html"> 3 </a> </div>
+
+
+	<div class=project id=four> <a id=four href="festivaloflights.html"> 4 </a> </div>
+	<div class=project id=five> 5 </div>
+</div>
+
+
+<center>
+	<div id=projectspalette> </div>
+</center>
 
 
 </body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+		.star{
+			width:100px;
+			height:100px;
+			display:inline-block;
+			background-image: url(Star.PNG);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<script type ="text/javascript">
+		function burlywood(input){alert(input)}
+		burlywood("Click to make stars")
+
+		function makeStar (){
+			let star = document.createElement("div")
+			document.body.appendChild(star)
+			star.classList.add("star")
+			star.style.transform ="rotate("+ Math.random()*360+"deg)"
+			star.style.transform ="width ("+ Math.random()*100+"px)"
+			star.style.transform ="width ("+ Math.random()*100+"px)"
+			star.style.filter ="blur ("+10+"px)"
+		}
+
+		document.addEventListener("click", makeStar)
+
+		// The orange words in the parenthesis is an input
+		// command slash/question mark is what cuts things
+
+
+	</script>
+
+	<!-- <div id=star> </div> -->
+
+</body>

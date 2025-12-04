@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		#chanukiah {
+			width:400px;
+			height:400px;
+			background-image: url(chanukiah.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+			top:250px;
+			left:500px;
+			z-index:1;
+			/*background-color:blue;*/
+			background-position: center;
+		}
+
+
+		#shamash{
+		width:100px;
+			height:150px;
+			background-image: url(candle.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+			/*background-color:black;*/
+			top:200px;
+			left:680px;
+			background-position: center;
+
+
+		}
+
+		#daycounter {
+			width:200px;
+			height:200px;
+			background-color:blueviolet;
+			font-size:50px;
+		}
+
+		.candles {
+			width:40px;
+			height:166px;
+			/*background-color:lightblue;*/
+			background-image: url(candle.png);
+			background-repeat:no-repeat;
+			background-size:cover;
+			position:relative;
+			display: inline-block;
+			top:-150px;
+			opacity:0;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+		<div id=shamash></div>
+
+<div id=daycounter></div>
+<div id=chanukiah>
+	<div id="candle1" class=candles> </div>
+<div id="candle2" class=candles> </div>
+<div id="candle3" class=candles> </div>
+<div id="candle4" class=candles> </div>
+<div id="candle5" class=candles> </div>
+<div id="candle6" class=candles> </div>
+<div id="candle7" class=candles> </div>
+<div id="candle8" class=candles> </div>
+
+</div>
+
+
+
+
+<div id=fire></div>
+
+<!-- 
+
+Needs: Functions, Event Listeners, If Statements
+
+Idea: Digital Channukiah
+
+Steps:
+	1. Chanukiah div
+	2. There are different divs for the shamash + all the candles
+	3. When you click on shamash it follows mouse at a 45 ish deg angle
+	4. Day div w/ counter that counts if it is day 1-8
+	5. Event listener for when you click on the day counter the day goes up + a new candle is put in the chanukiah
+	6. When a candle is clicked AND the mouse is the shamash then it adds a div for the light
+
+
+QUESTIONS: HOW DO YOU MAKE ALL OF THESE CONDITIONS WORK TOGETHER?????
+
+
+
+ -->
+
+<script type ="text/javascript">
+		
+		let day=0
+		daycounter.addEventListener("click", function(event){
+			day=day+1
+			daycounter.innerText="Day " + day
+
+			if (day==1){candle1.style.opacity="1"}
+			if (day==1){candle2.style.opacity="0"}
+			if (day==1){candle3.style.opacity="0"}
+			if (day==1){candle4.style.opacity="0"}
+			if (day==1){candle5.style.opacity="0"}
+			if (day==1){candle6.style.opacity="0"}
+			if (day==1){candle7.style.opacity="0"}
+			if (day==1){candle8.style.opacity="0"}
+
+			if (day==2){candle1.style.opacity="1"}
+			if (day==2){candle2.style.opacity="1"}
+			if (day==2){candle3.style.opacity="0"}
+			if (day==2){candle4.style.opacity="0"}
+			if (day==2){candle5.style.opacity="0"}
+			if (day==2){candle6.style.opacity="0"}
+			if (day==2){candle7.style.opacity="0"}
+			if (day==2){candle8.style.opacity="0"}
+
+			if (day==3){candle1.style.opacity="1"}
+			if (day==3){candle2.style.opacity="1"}
+			if (day==3){candle3.style.opacity="1"}
+			if (day==3){candle4.style.opacity="0"}
+			if (day==3){candle5.style.opacity="0"}
+			if (day==3){candle6.style.opacity="0"}
+			if (day==3){candle7.style.opacity="0"}
+			if (day==3){candle8.style.opacity="0"}
+
+			if (day==4){candle1.style.opacity="1"}
+			if (day==4){candle2.style.opacity="1"}
+			if (day==4){candle3.style.opacity="1"}
+			if (day==4){candle4.style.opacity="1"}
+			if (day==4){candle5.style.opacity="0"}
+			if (day==4){candle6.style.opacity="0"}
+			if (day==4){candle7.style.opacity="0"}
+			if (day==4){candle8.style.opacity="0"}
+
+			if (day==5){candle1.style.opacity="1"}
+			if (day==5){candle2.style.opacity="1"}
+			if (day==5){candle3.style.opacity="1"}
+			if (day==5){candle4.style.opacity="1"}
+			if (day==5){candle5.style.opacity="1"}
+			if (day==5){candle6.style.opacity="0"}
+			if (day==5){candle7.style.opacity="0"}
+			if (day==5){candle8.style.opacity="0"}
+
+			if (day==6){candle1.style.opacity="1"}
+			if (day==6){candle2.style.opacity="1"}
+			if (day==6){candle3.style.opacity="1"}
+			if (day==6){candle4.style.opacity="1"}
+			if (day==6){candle5.style.opacity="1"}
+			if (day==6){candle6.style.opacity="1"}
+			if (day==6){candle7.style.opacity="0"}
+			if (day==6){candle8.style.opacity="0"}
+
+			if (day==7){candle1.style.opacity="1"}
+			if (day==7){candle2.style.opacity="1"}
+			if (day==7){candle3.style.opacity="1"}
+			if (day==7){candle4.style.opacity="1"}
+			if (day==7){candle5.style.opacity="1"}
+			if (day==7){candle6.style.opacity="1"}
+			if (day==7){candle7.style.opacity="1"}
+			if (day==7){candle8.style.opacity="0"}
+
+			if (day==8){candle1.style.opacity="1"}
+			if (day==8){candle2.style.opacity="1"}
+			if (day==8){candle3.style.opacity="1"}
+			if (day==8){candle4.style.opacity="1"}
+			if (day==8){candle5.style.opacity="1"}
+			if (day==8){candle6.style.opacity="1"}
+			if (day==8){candle7.style.opacity="1"}
+			if (day==8){candle8.style.opacity="1"}
+
+			if (day==8){day=0}
+
+
+		})
+
+		shamash.addEventListener("click", function(event){
+		shamash.style.zIndex="10"
+		shamash.style.transform="rotate(-45deg)"
+
+		document.addEventListener("mousemove", function(input){
+			console.log(input)
+		shamash.style.left=input.clientX + "px"
+		shamash.style.top=input.clientY-100 + "px"
+		})
+		
+	})
+
+		candle1.addEventListener("click", function(){
+			candle1.style.backgroundImage="url(candlewithfire.png)"
+		})
+
+		candle2.addEventListener("click", function(){
+			candle2.style.backgroundImage="url(candlewithfire.png)"
+		})
+
+
+
+	</script>
+
+</body>
+
+</html>
+

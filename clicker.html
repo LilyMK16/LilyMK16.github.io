@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type ="text/css">
+		#star {
+			width:300px;
+			height:300px;
+			background-image: url(star.PNG);
+			background-position:center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#text {
+			width:50px;
+			height: 20px;
+
+		}
+
+		body {
+			background-color: lightblue;
+			margin:0px;
+		}
+	</style>
+</head>
+
+<body>
+
+
+<center>
+
+ Your score is... 
+
+<div id=text>
+</div>
+
+
+<div id=star> </div>
+</center>
+
+<script type="text/javascript">
+	let score=0
+	star.addEventListener("click", function(){
+		console.log(score)
+		text.innerText=score
+
+		if(score<=5){
+			score=score+1
+		}
+
+		if(5<=score&& score<=25){
+			score=score+4
+		}
+
+		if(25<=score&& score<=100){
+			score=score+10
+		}
+
+		if(score>=100&& score<=405){
+			score=score+15
+		}
+
+		if(score>=405&& score<=1000){
+			score=score+20
+		}
+
+	})
+
+</script>
+
+</body>
+</html>
