@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+
+		#title {
+			font-size: 60px;
+
+		}
+
+		body {
+			background-color:skyblue;
+		}
+
+
+
+	</style>
+
+
+</head>
+
+<body>
+
+<div id=title> We have taken too long to choose a game to play! Click to choose for us! </div>
+
+<script type="text/javascript">
+	let boardgames = ["Wingspan", "Creature Caravan", "Ticket to Ride", "Apiary", "Fromage", "Fromaggio", "Splendor (with expansion)", "Splendor (without expansion)", "Monopoly Deal", "Zoovadis"]
+	document.addEventListener("click", function(){
+		let randomNumber = Math.round(Math.random()*9)
+		alert(boardgames[randomNumber])
+
+	console.log(randomNumber)
+	})
+
+</script>
+
+
+</body>
+
+
+</html>
