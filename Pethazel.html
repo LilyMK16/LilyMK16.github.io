@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<style>
+
+		#hazel {
+			width:100px;
+			height:100px;
+			background-image: url(Hazel2.png);
+			background-size: contain;
+			background-repeat:no-repeat;
+			position:relative;
+			Transition:1s;
+		}
+
+		/*body {
+			background-color: rgb(100,0,255);
+		}*/
+
+
+	</style>
+</head>
+<body>
+	<div id=hazel> </div>
+	<script type=text/javascript>
+
+		let speed=1000
+		let r;
+		let g;
+		let b;
+
+		function moveHazel (){
+			hazel.style.left=Math.random()*1000+"px"
+			hazel.style.top=Math.random()*1000+"px"
+		}
+
+		setInterval(moveHazel, speed)
+
+		hazel.addEventListener("click", function(){
+			 speed=speed/2
+		})
+
+		function changeColor(){
+			r= Math.round(Math.random()*255)
+			g= Math.round(Math.random()*255)
+			b= Math.round(Math.random()*255)
+		}
+
+		document.body.style.backgroundColor = "rgb(" +r+"," +g+","+ b+")"
+
+	</script>
+
+</body>
+
+

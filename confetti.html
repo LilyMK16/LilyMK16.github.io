@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+
+		<style type="text/css">
+		.confetti {
+			width: 50px;
+			height:50px;
+			display:inline-block;
+			position: absolute;
+			transition:.5s;
+			/*transform:rotate(45deg);*/
+			animation-name: spin;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;	
+		}
+
+		@keyframes spin
+		{
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+
+		.confetti2 {
+			width: 50px;
+			height:50px;
+			display:inline-block;
+			position: absolute;
+			transition:.5s;
+			/*transform:rotate(45deg);*/
+			animation-name: spin2;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;	
+		}
+
+		@keyframes spin2
+		{
+			from {transform: rotate(360deg);}
+			to {transform: rotate(0deg);}
+		}
+
+		.confetti3 {
+			width: 50px;
+			height:50px;
+			display:inline-block;
+			position: absolute;
+			transition:.5s;
+			/*transform:rotate(45deg);*/
+			animation-name: spin3;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;	
+		}
+
+		@keyframes spin3
+		{
+			from {transform: rotate(180deg);}
+			to {transform: rotate(540deg);}
+		}
+
+
+	</style>
+</head>
+<Body>
+	<script type="text/javascript">
+
+		let fallfactor=0
+		
+		function makeConfetti(){
+			let square= document.createElement ("div")
+			square.classList.add("confetti")
+			document.body.appendChild(square)
+			let r=Math.round(Math.random()*255)
+			let g=Math.round(Math.random()*255)
+			let b=Math.round(Math.random()*255)
+			square.style.backgroundColor="rgb("+r +"," + g +","+b+")"
+			let rotation = Math.random() * 360
+
+			square.style.left=Math.random()*1500+"px"
+			square.style.top="-100px"
+			square.style.width=Math.random()*75+"px"
+			square.style.height=square.style.width
+			square.style.transform = "rotate(" + rotation + "deg)"
+
+			function fall(){
+				fallfactor=fallfactor+10
+				square.style.top=parseInt(square.style.top)+fallfactor+"px"
+
+				if(fallfactor>600){
+					fallfactor=0;
+				}
+			}
+
+			setInterval(fall, 300)
+
+
+		}
+
+		setInterval(makeConfetti, 60)
+
+
+		let fallfactor2=0
+
+
+		function makeConfetti2(){
+			let square2= document.createElement ("div")
+			square2.classList.add("confetti2")
+			document.body.appendChild(square2)
+			let r2=Math.round(Math.random()*255)
+			let g2=Math.round(Math.random()*255)
+			let b2=Math.round(Math.random()*255)
+			square2.style.backgroundColor="rgb("+r2 +"," + g2 +","+b2+")"
+			let rotation2 = Math.random() * 360
+
+			square2.style.left=Math.random()*1500+"px"
+			square2.style.top="-100px"
+			square2.style.width=Math.random()*75+"px"
+			square2.style.height=square2.style.width
+			square2.style.transform = "rotate(" + rotation2 + "deg)"
+
+			function fall2(){
+				fallfactor2=fallfactor2+10
+				square2.style.top=parseInt(square2.style.top)+fallfactor2+"px"
+
+				if(fallfactor2>600){
+					fallfactor2=0;
+				}
+			}
+
+			setInterval(fall2, 300)
+
+
+		}
+
+		setInterval(makeConfetti2, 60)
+
+
+		let fallfactor3=0
+
+
+		function makeConfetti3(){
+			let square3= document.createElement ("div")
+			square3.classList.add("confetti3")
+			document.body.appendChild(square3)
+			let r3=Math.round(Math.random()*255)
+			let g3=Math.round(Math.random()*255)
+			let b3=Math.round(Math.random()*255)
+			square3.style.backgroundColor="rgb("+r3 +"," + g3 +","+b3+")"
+			let rotation3 = Math.random() * 360
+
+			square3.style.left=Math.random()*1500+"px"
+			square3.style.top="-100px"
+			square3.style.width=Math.random()*75+"px"
+			square3.style.height=square3.style.width
+			square3.style.transform = "rotate(" + rotation3 + "deg)"
+
+			function fall3(){
+				fallfactor3=fallfactor3+10
+				square3.style.top=parseInt(square3.style.top)+fallfactor3+"px"
+
+				if(fallfactor3>600){
+					fallfactor3=0;
+				}
+			}
+
+			setInterval(fall3, 300)
+
+
+		}
+
+		setInterval(makeConfetti3, 60)
+
+
+	</script>
+</Body>
