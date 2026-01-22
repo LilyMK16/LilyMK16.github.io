@@ -9,7 +9,7 @@
 			background-size: contain;
 			background-repeat:no-repeat;
 			position:relative;
-			Transition:1s;
+			transition:.2s;
 		}
 
 		/*body {
@@ -23,7 +23,7 @@
 	<div id=hazel> </div>
 	<script type=text/javascript>
 
-		let speed=1000
+		let speed=2000
 		let r;
 		let g;
 		let b;
@@ -33,19 +33,34 @@
 			hazel.style.top=Math.random()*1000+"px"
 		}
 
-		setInterval(moveHazel, speed)
 
 		hazel.addEventListener("click", function(){
 			 speed=speed/2
+			 console.log(speed)
+
+			 setInterval(moveHazel, speed)
+
+
 		})
+
+
 
 		function changeColor(){
 			r= Math.round(Math.random()*255)
 			g= Math.round(Math.random()*255)
 			b= Math.round(Math.random()*255)
-		}
 
 		document.body.style.backgroundColor = "rgb(" +r+"," +g+","+ b+")"
+
+		}
+
+		setInterval(changeColor, speed)
+		
+
+		// document.addEventListener()
+
+		// document.addEventListener("click", function(){
+		// });
 
 	</script>
 
