@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+
+		<style type="text/css">
+		.confetti {
+			width: 10px;
+			height:50px;
+			display:inline-block;
+			position: absolute;
+			transition:.5s;
+			/*transform:rotate(45deg);*/
+			animation-name: spin3d;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate;	
+			animation-timing-function:ease-in-out;
+		}
+
+		@keyframes spin3d
+		{
+			from {transform: rotateZ(-25deg) rotateY(-180deg);}
+			to {transform: rotateZ(25deg) rotateY(180deg);}
+		}
+
+		
+
+	</style>
+</head>
+<Body>
+	<script type="text/javascript">
+
+		let fallfactor=0
+		
+		function makeConfetti(){
+			let square= document.createElement ("div")
+			square.classList.add("confetti")
+			document.body.appendChild(square)
+			let r=Math.round(Math.random()*255)
+			let g=Math.round(Math.random()*255)
+			let b=Math.round(Math.random()*255)
+			square.style.backgroundColor="rgb("+r +"," + g +","+b+")"
+			let rotation = Math.random() * 360
+
+			square.style.left=Math.random()*1500+"px"
+			square.style.top="-100px"
+			square.style.transform = "rotate(" + rotation + "deg)"
+
+			function fall(){
+				fallfactor=fallfactor+10
+				square.style.top=parseInt(square.style.top)+fallfactor+"px"
+
+				if(fallfactor>600){
+					fallfactor=0;
+				}
+			}
+
+			setInterval(fall, 300)
+
+
+		}
+
+		setInterval(makeConfetti, 5)
+
+
+	</script>
+</Body>

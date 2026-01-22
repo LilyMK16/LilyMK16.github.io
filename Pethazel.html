@@ -3,8 +3,8 @@
 	<style>
 
 		#hazel {
-			width:100px;
-			height:100px;
+			width:150px;
+			height:150px;
 			background-image: url(Hazel2.png);
 			background-size: contain;
 			background-repeat:no-repeat;
@@ -28,6 +28,8 @@
 		let g;
 		let b;
 
+		alert("We need to take Hazel on a walk but she doesn't want to go! Try and catch her!")
+
 		function moveHazel (){
 			hazel.style.left=Math.random()*1000+"px"
 			hazel.style.top=Math.random()*1000+"px"
@@ -37,6 +39,8 @@
 		hazel.addEventListener("click", function(){
 			 speed=speed/2
 			 console.log(speed)
+			 alert("you got her...")
+			 alert("Oh no she's running again")
 
 			 setInterval(moveHazel, speed)
 
