@@ -27,6 +27,7 @@
 		let r;
 		let g;
 		let b;
+		let caught=0
 
 		alert("We need to take Hazel on a walk but she doesn't want to go! Try and catch her!")
 
@@ -38,9 +39,31 @@
 
 		hazel.addEventListener("click", function(){
 			 speed=speed/2
+			 caught=caught+1
 			 console.log(speed)
-			 alert("you got her...")
-			 alert("Oh no she's running again")
+
+			 if (caught==1){
+			 	alert("you got her...")
+			 	alert("haha lol no you didn't")
+			 }
+			 
+			 if (caught==2){
+			 	alert("you got her...")
+			 	alert("phsych")
+			 }
+
+			 if (caught==3){
+			 	alert("maybe this time?")
+			 	alert("you really thought")
+			 }
+
+			 if (caught==4){
+			 	alert("Finally omg")
+			 	alert("based on true events")
+			 	return
+			 }
+
+			 if (caught>=5){return}
 
 			 setInterval(moveHazel, speed)
 
