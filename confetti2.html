@@ -7,6 +7,7 @@
 			height:50px;
 			display:inline-block;
 			position: absolute;
+			/*color: blue;*/
 			transition:.5s;
 			/*transform:rotate(45deg);*/
 			animation-name: spin3d;
@@ -30,7 +31,9 @@
 	<script type="text/javascript">
 
 		let fallfactor=0
-		
+		let colors = ["#D4D4EB","#7F7CAF","#9FB4C7","#28587B","#9FB798","#4A2545","#90AA86","#29335C"]
+		console.log(colors[0], colors[1], colors[2], colors[3])
+
 		function makeConfetti(){
 			let square= document.createElement ("div")
 			square.classList.add("confetti")
@@ -38,14 +41,18 @@
 			let r=Math.round(Math.random()*255)
 			let g=Math.round(Math.random()*255)
 			let b=Math.round(Math.random()*255)
-			square.style.backgroundColor="rgb("+r +"," + g +","+b+")"
-			let rotation = Math.random() * 360
+			// square.style.backgroundColor="rgb("+r +"," + g +","+b+")"
+			let randomcolor = Math.floor(Math.random() * colors.length)
+			console.log(randomcolor)
 
+			square.style.backgroundColor=colors[randomcolor]
+			let rotation = Math.random() * 360
+			
 			square.style.left=Math.random()*1500+"px"
-			square.style.top="-100px"
+			square.style.top="0px"
 			square.style.transform = "rotate(" + rotation + "deg)"
 
-			function fall(){
+			// function fall(){
 				fallfactor=fallfactor+10
 				square.style.top=parseInt(square.style.top)+fallfactor+"px"
 
@@ -54,12 +61,17 @@
 				}
 			}
 
-			setInterval(fall, 300)
+			// setInterval(fall, 1000)
 
 
-		}
+		// }
 
-		setInterval(makeConfetti, 5)
+		for (let i= 0; i < 1000; i++){
+				makeConfetti()
+
+			} 
+
+		// setInterval(makeConfetti, 5)
 
 
 	</script>
