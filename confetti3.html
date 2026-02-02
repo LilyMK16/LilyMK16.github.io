@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+
+		<style type="text/css">
+		.confetti {
+			width: 10px;
+			height:50px;
+			display:inline-block;
+			position: absolute;
+			transition:.5s;
+			/*transform:rotate(45deg);*/
+			animation-name: spin;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate;	
+			animation-timing-function:ease-in-out;
+			} 
+
+		@keyframes spin
+		{
+			from {transform: rotate(var(--startRot));}
+			to {transform: rotate(var(--endRot));}
+		}
+
+
+
+	</style>
+</head>
+<Body>
+	<button id="button">drop confetti</button>
+	<input type = "color" value ="#6b90cc" id="colorPicker">
+	<input type="range" min="10" max ="1000" step="1" id="slider" value="100">
+	<script type="text/javascript">
+
+		let fallfactor=0
+		let dropConfettiButton=document.getElementById("button")
+		let colorPicker = document.getElementById("colorPicker")
+		console.log(colorPicker.value)
+		let slider = document.getElementById("slider")
+		console.log(slider.value)
+		
+		function makeConfetti(){
+			let square= document.createElement ("div")
+			square.classList.add("confetti")
+			document.body.appendChild(square)
+			// let r=Math.round(Math.random()*255)
+			// let g=Math.round(Math.random()*255)
+			// let b=Math.round(Math.random()*255)
+			// square.style.backgroundColor="rgb("+r +"," + g +","+b+")"
+			square.style.backgroundColor=colorPicker.value
+			// let rotation = Math.random() * 360
+
+			square.style.left=Math.random()*1500+"px"
+			square.style.top="-100px"
+			// square.style.transform = "rotate(" + rotation + "deg)"
+			let startRot = Math.random()*-360 + "deg"
+			let endRot = Math.random()*360 + "deg"
+			square.style.setProperty("--startRot", startRot)
+			square.style.setProperty("--endRot", endRot)
+
+			function fall(){
+				fallfactor=fallfactor+10
+				square.style.top=parseInt(square.style.top)+fallfactor+"px"
+
+				if(fallfactor>600){
+					fallfactor=0;
+				}
+			}
+
+			setInterval(fall, 300)
+		}
+
+		dropConfettiButton.addEventListener("click", function(){
+			for(let i = 0; i < slider.value; i++){
+				makeConfetti()
+			}
+		})
+
+		// setInterval(makeConfetti, 60)
+
+
+
+	</script>
+</Body>
