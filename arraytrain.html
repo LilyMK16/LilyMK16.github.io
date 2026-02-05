@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<style>
+			#train {
+				margin-top: 30px;
+				display:flex;
+				gap: 12px;
+				/*gap only works with display:flex. Display: flex makes things horizontal*/
+			}
+
+			.cart {
+				border: 1px solid black;
+				min-width: 125px;
+				height: 80px;
+				text-align: center;
+				position:relative;
+				background-color:lightblue;
+			}
+
+			.cart:before {
+			/*this is a "fake" element. Before adds things before, while afer adds things after. */
+				content: "";
+				width: 30px;
+				height: 30px;
+				border: 1px solid black;
+				display: block;
+				border-radius:50%;
+				position: absolute;
+				bottom:-15px;
+				left:10px;
+				background-color:lightslategrey;
+
+			}
+
+			.cart:after{
+				content: "";
+				width: 30px;
+				height: 30px;
+				border: 1px solid black;
+				display: block;
+				border-radius:50%;
+				position: absolute;
+				bottom:-15px;
+				left:80px;
+				background-color:lightslategrey;
+			}
+
+		</style>
+</head>
+<body>
+	<input type="text" id="person">
+	<button id="addperson">add person</button>
+		<button id="removeperson">remove person</button>
+
+	<div id="train">
+		<div class="cart">faiz</div>
+		<div class="cart">lily</div>
+		<div class="cart">annika</div>
+	</div>
+
+
+
+	<script>
+		let people = ["Faiz","Lily","Annika"]
+		let addPersonButton = document.getElementById("addperson")
+		addPersonButton.addEventListener("click", function(){
+			let personInput = document.getElementById("person")
+			console.log(personInput.value)
+			people.push(personInput.value)
+			personInput.value = ""
+			console.log(people)
+
+		})
+		let removePersonButton = document.getElementById("removeperson")
+		removePersonButton.addEventListener("click", function(){
+			let personInput = document.getElementById("person")
+			console.log(personInput.value)
+			people.pop(personInput.value)
+			console.log(people)
+
+		})
+		// people.push("Chae")
+		// people.push("Kaya")
+		// people.pop()
+
+	</script>
+
+</body>
+</html>
