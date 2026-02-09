@@ -1,0 +1,237 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"st",
+				"startRot"
+			],
+			[
+				"inlin",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/c29lk/Desktop/LilyMK16.github.io/arraytrain.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/confetti3.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/confetti2.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/j.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/h.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/i.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Projects.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/confetti.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/index.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Pethazel.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/g.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/boardgamepicker.html",
+		"/Users/c29lk/Desktop/h.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Journal.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/festivaloflights.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/card.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/clicker.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/functions.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/FakeIndex.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/MovingGIF.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Things.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/f.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/journalStyle.css",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/LAProjects.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/LAJournal.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/LAIndex.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/e.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/d.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/c.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Hazelphotojumpscarelink.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/b.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/HPJL3.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Happybirthdaydad.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/HPJL2.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/LilyCS1.html",
+		"/Users/c29lk/Desktop/LilyMK16.github.io/Hazel photo jumpscare link.html",
+		"/Users/c29lk/Desktop/C29lk.github.io/Journal.html",
+		"/Users/c29lk/Desktop/C29lk.github.io/Projects.html",
+		"/Users/c29lk/Desktop/C29lk.github.io/index.html",
+		"/Users/c29lk/Desktop/C29lk.github.io/Hazelphotojumpscarelink.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/FakeIndex.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/Projects.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/LAIndex.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/LAProjects.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/HPJL3.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/LAJournal.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/LilyCS1.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/HPJL2.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/Hazelphotojumpscarelink.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/mollySampleTypewriter.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/Journal.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/Index.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/fail.html",
+		"/Users/c29lk/Desktop/Lily Website CS1/Lily.html",
+		"/Users/c29lk/Desktop/LilyCS1.html",
+		"/Users/c29lk/Desktop/Lily.html"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 131.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "arraytrain.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
