@@ -19,6 +19,13 @@
   			font-style: normal;
 			}
 
+		#text{
+			position:fixed;
+			top:600px;
+			display:inline-block;
+			left:100px;
+		}
+
 		
 
 		body {
@@ -51,8 +58,8 @@
 
 	#projectspalette {
 		background-image: url(Projectspalette.png);
-		height: 100vh;
-		width: 50vw;
+		height: 800px;
+		width: 800px;
 		background-size: contain;
 		background-repeat:no-repeat;
 		/*background-color: blueviolet;*/
@@ -200,6 +207,20 @@
 }
 
 
+@media (max-width: 600px) {
+  #projectspalette {
+  	width: 350px;
+  	height: 350px;
+  }
+  #one {
+
+  }
+  #ten {
+
+  }
+}
+
+
 	</style>
 
 	
@@ -219,14 +240,37 @@
 	<div class=project id=two> <a id=two href="functions.html"> 2 </a> </div>
 	<div class=project id=three> <a id=three href="clicker.html"> 3 </a> </div>
 	<div class=project id=four> <a id=four href="festivaloflights.html"> 4 </a> </div>
-	<div class=project id=five> <a id=five href="boardgamepicker.html"> 5 </div>
-	<div class=project id=six> <a id=six href=Pethazel.html> 6 </div>
-	<div class=project id=seven> <a id=seven href=confetti.html> 7 </div>
-	<div class=project id=eight> <a id=eight href=confetti2.html> 8 </div>
-	<div class=project id=nine> <a id=nine href=confetti3.html> 9 </div>
-	<div class=project id=ten> <a id=ten href=arraytrain.html> 10 </div>
+	<div class=project id=five> <a id=five href="boardgamepicker.html"> 5 </a>  </div>
+	<div class=project id=six> <a id=six href=Pethazel.html> 6 </a> </div>
+	<div class=project id=seven> <a id=seven href=confetti.html> 7 </a>  </div>
+	<div class=project id=eight> <a id=eight href=confetti2.html> 8 </a> </div>
+	<div class=project id=nine> <a id=nine href=confetti3.html> 9 </a>  </div>
+	<div class=project id=ten> <a id=ten href=arraytrain.html> 10 </a>  </div>
 
-
+<div id=text> 
+	List of Projects:
+	<br><br>
+	- Project #1 is a GIF of a dog that walks when you type
+	<br>
+	- Project #2 is experimenting with functions. Whenever you press the screen, a new star appears.
+	<br>
+	- Project #3 is a clicker. The score goes up when you click on the star.
+	<br>
+	- Project #4 is a digital Chanukiah.
+	<br>
+	- Project #5 uses arrays to pick a random board game. I thought this would be particularly useful for my family.
+	<br>
+	- Project #6 is a game where you have to try to get my dog Hazel, who always runs when we try to get her leash on to take her for a walk. Across a few levels, she gets progressively faster.
+	<br>
+	- Project #7 is falling confetti using functions
+	<br>
+	- Project #8 is more confetti
+	<br>
+	- Project #9 is even more confetti. This time you can use a color wheel and a slider to determine the number of confetti peices and the color of the confetti.
+	<br>
+	- Project #10 uses arrays add peoples names to a train. 
+	<br>
+</div>
 
 
 </div>
