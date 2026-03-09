@@ -20,7 +20,7 @@
 			}
 
 		#text{
-			position:fixed;
+			position:absolute;
 			top:600px;
 			display:inline-block;
 			left:100px;
@@ -63,7 +63,8 @@
 		background-size: contain;
 		background-repeat:no-repeat;
 		/*background-color: blueviolet;*/
-		position: fixed;
+		/*position: fixed;*/
+		position: absolute;
 		top: 0vh;
 		left:25vw;
 
@@ -80,7 +81,7 @@
 		line-height:1vh;
 	}
 	#one {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:28.6vw;
 		color:saddlebrown;
@@ -93,7 +94,7 @@
 
 
 	#two {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:33.2vw;
 		color:darkslategrey;
@@ -105,7 +106,7 @@
 	}
 
 	#three {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:38vw;
 		color:#b05500;
@@ -118,7 +119,7 @@
 		transition:2s;
 	}
 	#four {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:42vw;
 		color:#824700;
@@ -129,7 +130,7 @@
 		transition:2s;
 	}
 	#five {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:46vw;
 		color:#5e6200;
@@ -142,7 +143,7 @@
 	}
 
 	#six {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:50.5vw;
 		color:darkgreen;
@@ -154,7 +155,7 @@
 		transition:2s;
 }
 	#seven {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:54.75vw;
 		color:forestgreen;
@@ -168,7 +169,7 @@
 	}
 
 	#eight {
-		position:fixed;
+		position:absolute;
 		top:31vh;
 		left:58.75vw;
 		color:darkslategrey;
@@ -181,7 +182,7 @@
 }
 
 #nine {
-		position:fixed;
+		position:absolute;
 		top:38vh;
 		left:28.5vw;
 		color:indianred;
@@ -194,7 +195,7 @@
 }
 
 #ten {
-		position:fixed;
+		position:absolute;
 		top:38vh;
 		left:32vw;
 		color:indianred;
@@ -202,6 +203,19 @@
 	}
 
 	#ten:hover {
+		background-color:#9e9d2c;
+		transition:2s;
+}
+
+#eleven {
+		position:absolute;
+		top:38vh;
+		left:38vw;
+		color:indianred;
+		transition: background-color .75s ease;
+	}
+
+	#eleven:hover {
 		background-color:#9e9d2c;
 		transition:2s;
 }
@@ -246,8 +260,17 @@
 	<div class=project id=eight> <a id=eight href=confetti2.html> 8 </a> </div>
 	<div class=project id=nine> <a id=nine href=confetti3.html> 9 </a>  </div>
 	<div class=project id=ten> <a id=ten href=arraytrain.html> 10 </a>  </div>
+		<div class=project id=eleven> <a id=ten href=badui.html> 11 </a>  </div>
 
-<div id=text> 
+
+
+
+
+</div>
+
+<div id="text"> 
+	<br><br>
+
 	List of Projects:
 	<br><br>
 	- Project #1 is a GIF of a dog that walks when you type
@@ -270,12 +293,10 @@
 	<br>
 	- Project #10 uses arrays add peoples names to a train. 
 	<br>
+	- Project #11 is a bad UI 
+	<br><br>
+
 </div>
-
-
-</div>
-
-
 <center>
 	<div id=projectspalette> </div>
 </center>

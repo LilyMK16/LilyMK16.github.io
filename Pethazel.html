@@ -3,8 +3,8 @@
 	<style>
 
 		#hazel {
-			width:150px;
-			height:150px;
+			width:500px;
+			height:500px;
 			background-image: url(Hazel2.png);
 			background-size: contain;
 			background-repeat:no-repeat;
@@ -28,6 +28,7 @@
 		let g;
 		let b;
 		let caught=0
+		let stop = false
 
 		alert("We need to take Hazel on a walk but she doesn't want to go! Try and catch her!")
 
@@ -63,9 +64,14 @@
 			 	return
 			 }
 
-			 if (caught>=5){return}
-
-			 setInterval(moveHazel, speed)
+			 if (caught>=5){
+			 	clearInterval(moveHazel)
+			 	stop = true
+			 }
+			 if (stop == false) {
+			 	setInterval(moveHazel, speed)
+			 }
+			 
 
 
 		})

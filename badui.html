@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>badUI</title>
+
+	<style>
+		#button {
+			position:absolute;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<button id="button"> Enter password </button>
+	<script>
+		let button = document.getElementById("button")
+		console.log(button)
+		// add click event, console log "click"
+		button.addEventListener("click", function(){
+			console.log("click")
+		})
+
+		button.addEventListener("mouseover", function(){
+			console.log("mouse is hovering")
+			// button changes position randomly
+
+			button.style.left=Math.random()*1000+"px"
+			button.style.top=Math.random()*700+"px"
+
+			
+		})
+
+		button.addEventListener("mouseout", function(){
+			console.log("mouse leaves")
+			alert("You need a password for this button")
+		})
+
+
+
+	</script>
+
+</body>
+</html>
