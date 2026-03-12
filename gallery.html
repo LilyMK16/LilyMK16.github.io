@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns:1fr 1fr 1fr;
+			/*you could also use repeat(4, 1fr)*/
+			column-gap:20px;
+			row-gap: 20px;
+		}
+		.item {
+			/*border: 1px solid black;*/
+			border-radius: 30px;
+		}
+
+		.item img {
+			border-radius:1000px;
+			width:100%;
+			height:100%;
+			object-fit:contain;
+		}
+
+		#fav {
+			grid-column:1/3;
+			grid-row:1/3;
+		}
+
+	</style>
+<body>
+	<div class ="container">
+		<div class="item"><img src="star.png"></div>
+		<div class="item" id="fav"><img src="hpjl3.png"></div>
+		<div class="item"><img src="star.png"></div>
+		<div class="item"><img src="hpjl3.png"></div>
+		<div class="item"><img src="star.png"></div>
+		<div class="item"><img src="hpjl3.png"></div>
+		<div class="item"><img src="star.png"></div>
+		<div class="item"><img src="hpjl3.png"></div>
+		<div class="item"><img src="star.png"></div>
+
+<!-- to make an image bigger, put an id on one image (say id="fav") and then in the style section do 
+	#fav {
+	grid column:1/3;
+	grid-row:1/3;
+	btw 1/3 is just a number you can use any number
+
+to change the sccreen depending on device, add in the style section 
+	@media (max-width:800px) {
+	.container {
+	grid-template-columns: repeat(1, 1fr);
+	}
+	}
+
+} -->
+
+
+	</div>
+
+</body>
+</html>
