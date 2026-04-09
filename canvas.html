@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>canvas</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+	function setup(){
+		createCanvas(1000,1000);
+		noStroke()
+		//you can also change this in the draw function before each object like the fill, you can use strokeWeight as well. You can also use noStroke for specific objects using the draw function
+		// rectMode(CENTER) centers the rectangle, can be done w/ other shapes
+	}
+
+	function draw(){
+		background(75, 100, 350)
+		// (r, g, b) but could also be a hex code
+		fill("#FFBF00")
+		// also could be a hex code, fills go before each shape
+		ellipse(50,50,80,80)
+		line(50,50,100,100)
+		// first and second number changes x y position, second two are dimensions
+		// layer order is whatever is latter is on top, if the ellipse was before the bg, it would dissapear
+		// right now the ellipse is a circle but it can be an elipse
+		// fill(300,200,100)
+		// circle(300,300,20)
+		// fill(100,300,200)
+		// rect(150,150,40,40,10)
+		//the ten gives the rectangle rounded borders
+		//line(600,600,500,600)
+		// the first two points are the starting coord and the second two points are the ending points
+
+	}
+
+</script>
+
+</body>
+</html>
