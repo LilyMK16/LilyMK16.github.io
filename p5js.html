@@ -31,37 +31,48 @@
 				let y = j*50+130
 				let d=dist(x,y,mouseX,mouseY)
 				let circleSize = map(j, 0, 20, 10, 100)
+				push()
+				translate(x,y)
 				if(d<40){
 					fill("blue")
+					shearY(QUARTER_PI)
 				} else {
 					fill("yellow")
 				}
-				circle(i*50+30,j*50+130,10*i+10)
+				circle(0,0,10*i+10)
 				if (d<30){
-				fill("blue")}
-				else {
+				fill("blue")
+				shearY(QUARTER_PI)
+
+				} else {
 					fill ("pink")
 				}
-				circle(i*50+30,j*50+130,circleSize)
+				circle(0,0,circleSize)
 				if (d<20){
 					fill("blue")
+					shearY(QUARTER_PI)
+
 				}
 				else{
 				fill("lightblue")}
 
-				circle(i*50+30,j*50+130,circleSize/2)
+				circle(0,0,circleSize/2)
 				if (d<10){
-				fill("blue")}
+				fill("blue")
+				shearY(QUARTER_PI)}
 				else {
 					fill("lightblue")
 				}
-				circle(i*50+30,j*50+130,circleSize/4)
+				circle(0,0,circleSize/4)
 				if (d<5){
+				shearY(QUARTER_PI)
+
 					fill("blue")
 				}
 				else {
 					fill ("yellow")
 				}
+				pop()
 			}
 			
 		
