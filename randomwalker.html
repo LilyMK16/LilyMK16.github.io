@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+</head>
+<body>
+	<button id="new island">new island</button>
+<script>
+	let xpos
+	let ypos
+	let transparent = false
+	function setup(){
+		createCanvas(1500,800);
+		background("lightblue")
+		xpos=width/2
+		ypos=height/2
+		let randomNumber = random(30,50)
+		document.getElementById("new island").addEventListener("click", function() {
+			transparent = !transparent
+		})
+		noStroke()
+	}
+
+	function draw(){
+		let randomNumber = floor(random(8))
+		let randomNumber2 = floor(random(1500))
+		let randomNumber3 = floor(random(1000))
+		let randomColor = floor(random(7))
+
+		if(!transparent){
+			xpos=randomNumber2
+			ypos=randomNumber3
+			fill(0,0,0,0)}
+			
+		
+		else{
+			
+if (randomColor ==0){
+			fill("green")
+			}
+
+			if (randomColor ==1){
+			fill("green")
+			}
+
+			if (randomColor ==2){
+				fill("green")
+			}
+
+			if (randomColor ==3){
+				fill("green")
+			}
+			if (randomColor ==4){
+				fill("green")
+			}
+			if (randomColor ==5){
+				fill("green")
+			}
+
+			if (randomColor ==5){
+				fill("green")
+
+		if (randomNumber==0){
+			xpos = xpos + (5+(random(5,10)))
+		}
+
+		if (randomNumber==1){
+			xpos = xpos - (5+(random(5,10)))
+		}
+
+		if (randomNumber==2){
+			ypos = ypos + (5+(random(5,10)))
+		}
+
+		if (randomNumber==3){
+			ypos = ypos - (5+(random(5,10)))
+		}
+
+		if (randomNumber==4){
+			xpos = xpos + (random(5,10))
+			ypos=ypos +(random(5,10))
+			
+		}
+		if (randomNumber==5){
+			xpos = xpos - (random(5,10))
+			ypos=ypos +(random(5,10))
+			
+		}
+		if (randomNumber==6){
+			xpos = xpos - (random(5,10))
+			ypos=ypos -(random(5,10))
+			
+		}
+		if (randomNumber==7){
+			xpos = xpos + (random(5,10))
+			ypos=ypos -(random(5,10))
+			
+		}
+		}
+
+		square(xpos,ypos,(random(10,20)),(random(50,100)),(random(50,100)),(random(50,100)),(random(50,100)))
+		}
+	}
+</script>
+</body>
+</html>
